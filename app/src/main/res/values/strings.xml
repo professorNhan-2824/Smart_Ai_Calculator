@@ -1,0 +1,68 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">Smart AI Calculator</string>
+
+    <!-- Home -->
+    <string name="title_ai_calculator">AI Calculator</string>
+
+    <!-- Calculator menu -->
+    <string name="menu_basic_calculator">Basic Calculator</string>
+    <string name="menu_ai_calculator">AI Calculator</string>
+    <string name="menu_unit_converter">Unit Converter</string>
+    <string name="menu_currency_converter">Currency Converter</string>
+    <string name="menu_discount_calculator">Discount Calculator</string>
+    <string name="menu_tip_calculator">Tip Calculator</string>
+    <string name="menu_date_calculator">Date Calculator</string>
+    <string name="menu_loan_calculator">Loan Calculator</string>
+    <string name="menu_gpa_calculator">GPA Calculator</string>
+    <string name="menu_bmi_calculator">BMI Calculator</string>
+
+    <!-- Select Language -->
+    <string name="select_language">Select Language</string>
+
+    <!-- Languages -->
+    <string name="language_english">English</string>
+    <string name="language_chinese">Chinese</string>
+    <string name="language_hindi">Hindi</string>
+    <string name="language_french">French</string>
+    <string name="language_arabic">Arabic</string>
+    <string name="language_italian">Italian</string>
+    <string name="language_spanish">Spanish</string>
+    <string name="language_bengali">Bengali</string>
+    <string name="language_russian">Russian</string>
+    <string name="language_portuguese">Portuguese</string>
+
+    <!-- setting-->
+    <string name="Setting_title">App Setting</string>
+    <string name="Setting_personalization">Personalization</string>
+    <string name="Setting_language">Language</string>
+    <string name="Setting_app_theme">App Theme</string>
+    <string name="Setting_system">App system</string>
+    <string name="Setting_comunicate">Comunicate</string>
+    <string name="Setting_feedback">FeedBack</string>
+    <string name="Setting_feedback_share">Share your feedback</string>
+    <string name="Setting_privacy_policy">Privacy Policy</string>
+    <string name="Setting_your_data">See how we protect your data</string>
+    <string name="Setting_others">Others</string>
+    <string name="Setting_share_app">Share App</string>
+    <string name="Setting_share_friend">Share with your friends</string>
+    <string name="Setting_rate_us">Rate Us</string>
+    <string name="Setting_give_your_rating">Give us your rating </string>
+    <string name="Setting_about_us">About Us</string>
+    <string name="Setting_know_about_us">Know more about us</string>
+    <string name="version_name_app">Version App: %1$s</string>
+    
+    <!-- basic_calculator-->
+    <string name="Basic_caculator_simple">Simple</string>
+    <string name="Basic_caculator_scientific">Scientific</string>
+    <string name="Basic_caculator_history">History</string>
+    <string name="Basic_caculator_ac">AC</string>
+
+    <!-- History bottom sheets   -->
+    <string name="history_bottom_insert_formula">Insert Formula</string>
+    <string name="history_bottom_replace">Replace</string>
+    <string name="history_bottom_copy_resulit">Copy result</string>
+    <string name="history_bottom_delete">Delete</string>
+
+
+</resources>
