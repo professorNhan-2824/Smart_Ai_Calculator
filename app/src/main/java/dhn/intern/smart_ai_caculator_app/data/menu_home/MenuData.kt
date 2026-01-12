@@ -1,9 +1,7 @@
 package dhn.intern.smart_ai_caculator_app.data.menu_home
 
 import dhn.intern.smart_ai_caculator_app.R
-import dhn.intern.smart_ai_caculator_app.model.ChildMenuSettingUI
 import dhn.intern.smart_ai_caculator_app.model.MenuUI
-import dhn.intern.smart_ai_caculator_app.model.SettingMenuUI
 import dhn.intern.smart_ai_caculator_app.ui.navigation.NavScreen
 
 object MenuData {
