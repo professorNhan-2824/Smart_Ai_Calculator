@@ -59,7 +59,6 @@ fun HalfScreenBottomSheet(
     onDismiss: () -> Unit,
 ) {
     val menuList = MenuData.getSettingHistoryData()
-    val screenHeight = LocalConfiguration.current.screenHeightDp.dp
     val sheetState = rememberModalBottomSheetState(
         skipPartiallyExpanded = true
     )
@@ -97,7 +96,6 @@ fun HalfScreenBottomSheet(
                             },
                         contentDescription = null,
                         tint = MaterialTheme.colorScheme.onBackground
-
                     )
                 }
 
