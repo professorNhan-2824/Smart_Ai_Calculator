@@ -27,6 +27,8 @@ private val LightColorScheme = lightColorScheme(
 
     secondaryContainer = LightKeypadNormal,
     errorContainer = LightKeypadAC,
+
+    outlineVariant = LightCard,
 )
 
 private val DarkColorScheme = darkColorScheme(
@@ -48,6 +50,7 @@ private val DarkColorScheme = darkColorScheme(
     secondaryContainer = DarkKeypadNormal,
     errorContainer = DarkKeypadAC,
 
+    outlineVariant = DarktCard,
     )
 
 

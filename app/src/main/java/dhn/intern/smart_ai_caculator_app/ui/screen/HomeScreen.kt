@@ -83,7 +83,10 @@ fun HomeScreen(
 }
 
 @Composable
-fun MenuItemRow(item: MenuUI, onClick: () -> Unit) {
+fun MenuItemRow(
+    item: MenuUI,
+    onClick: () -> Unit,
+) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
@@ -114,6 +117,5 @@ fun MenuItemRow(item: MenuUI, onClick: () -> Unit) {
             )
         }
     }
-
 }
 

@@ -182,7 +182,7 @@ fun SettingChildItem(
             Text(
                 text = stringResource(id = item.descrip),
                 style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.secondary
+                color = MaterialTheme.colorScheme.onSurfaceVariant
             )
         }
         Spacer(modifier = Modifier.weight(1f))

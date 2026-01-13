@@ -58,12 +58,11 @@ fun NavBar_basic(
     navController: NavHostController,
     title: Int,
     icon: Int,
-    onclick: ()->Unit
+    onclick: ()->Unit,
+    modifier: Modifier
 ){
     Row(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 12.dp),
+        modifier = modifier,
         verticalAlignment = Alignment.CenterVertically
     ) {
         Icon(

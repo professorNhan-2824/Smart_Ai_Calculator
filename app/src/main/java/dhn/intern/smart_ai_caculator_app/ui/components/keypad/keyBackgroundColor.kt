@@ -19,6 +19,6 @@ fun keyBackgroundColor(key: String): Color {
             MaterialTheme.colorScheme.secondaryContainer
 
         else ->
-            MaterialTheme.colorScheme.primary
+            MaterialTheme.colorScheme.surfaceVariant
     }
 }

@@ -1,5 +1,6 @@
 package dhn.intern.smart_ai_caculator_app.ui.components.history
 
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -30,25 +31,31 @@ import dhn.intern.smart_ai_caculator_app.data.entity.CalculatorHistoryEntity
 @Composable
 fun CaculatorHistory(
     history: CalculatorHistoryEntity,
-    onClick: () -> Unit = {}
+    onClick: () -> Unit = {},
 ) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
             .clickable { onClick() }
-            .padding(bottom = 20.dp),
+            .border(
+                width = 1.dp,
+                color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.2f),
+                shape = RoundedCornerShape(12.dp)
+            ),
         colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.secondary
+            containerColor = MaterialTheme.colorScheme.outlineVariant
         ),
         shape = RoundedCornerShape(12.dp),
-        elevation = CardDefaults.cardElevation(4.dp)
+        elevation = CardDefaults.cardElevation(0.dp)
     ) {
         Row(
-            modifier = Modifier.padding(16.dp),
+            modifier = Modifier
+                .padding(16.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
             Column(
-                modifier = Modifier.weight(1f)
+                modifier = Modifier.weight(1f),
+                horizontalAlignment = Alignment.Start
             ) {
                 Text(
                     text = history.expression,
@@ -56,7 +63,9 @@ fun CaculatorHistory(
                     fontSize = 25.sp,
                     fontWeight = FontWeight.Medium,
                     color = MaterialTheme.colorScheme.tertiary,
-                    textAlign = TextAlign.End
+                    textAlign = TextAlign.End,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
                 )
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(
@@ -80,7 +89,6 @@ fun CaculatorHistory(
                     .size(18.dp)
                     .align(Alignment.CenterVertically)
             )
-
         }
     }
 }

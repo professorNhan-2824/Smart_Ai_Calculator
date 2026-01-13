@@ -28,11 +28,14 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
@@ -58,25 +61,28 @@ fun BasicCaculatorScreen(
     val result by calculatorViewModel.result.collectAsState()
 
     Scaffold(
-        topBar = {
+
+        modifier = Modifier
+            .fillMaxSize(),
+    ) { innerPadding ->
+        Column(
+            modifier = Modifier
+                .padding(innerPadding)
+                .fillMaxSize()
+                .background(MaterialTheme.colorScheme.primary),
+        ) {
             NavBar_basic(
                 title = R.string.title_ai_calculator,
                 icon = R.drawable.ai_caculator,
                 navController = navController,
                 onclick = {
                     //Navigation to AI Calculator Screen
-                }
+                },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .background(MaterialTheme.colorScheme.surfaceVariant)
+                    .padding(horizontal = 16.dp, vertical = 12.dp)
             )
-        },
-        modifier = Modifier
-            .fillMaxSize()
-            .background(MaterialTheme.colorScheme.primary),
-    ) { innerPadding ->
-        Column(
-            modifier = Modifier
-                .padding(innerPadding)
-                .fillMaxSize()
-        ) {
             DisplayInputNumber(
                 expression = expression,
                 result = result,
@@ -113,18 +119,17 @@ fun DisplayInputNumber(
 ) {
     val screenHeight = LocalConfiguration.current.screenHeightDp.dp
 
-    Card(
+    Box(
         modifier = Modifier
             .fillMaxWidth()
-            .height(screenHeight * 0.35f),
-        shape = RoundedCornerShape(
-            bottomStart = 24.dp,
-            bottomEnd = 24.dp
-        ),
-        colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.surfaceVariant
-        ),
-        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
+            .height(screenHeight * 0.35f)
+            .clip(
+                RoundedCornerShape(
+                    bottomStart = 24.dp,
+                    bottomEnd = 24.dp
+                )
+            )
+            .background(MaterialTheme.colorScheme.surfaceVariant)
     ) {
         Column(
             modifier = Modifier
@@ -144,7 +149,9 @@ fun DisplayInputNumber(
                     fontSize = 60.sp,
                     fontWeight = FontWeight.Bold,
                     color = MaterialTheme.colorScheme.onBackground,
-                    textAlign = TextAlign.End
+                    textAlign = TextAlign.End,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
                 )
 
                 Spacer(modifier = Modifier.height(8.dp))

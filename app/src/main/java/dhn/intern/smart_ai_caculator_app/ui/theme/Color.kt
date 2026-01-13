@@ -9,7 +9,7 @@ val LightBackground = Color(0xFFF3F5F6)
 val LightTextPrimary = Color(0xFF000000)
 val LightTextSecondary = Color(0xFF0F2B4E)
 val LightTextTertiary = Color(0xFF1E3224)
-val LightTextQuaternary = Color(0xFF2D2A48)
+val LightTextQuaternary = Color(0x802D2A48)
 val SelectLanguage = Color(0xFF0B57D0)
 val ProgressTrackLight = Color(0xFFDFEBFE)
 val ProgressIndicatorLight = Color(0xFF76D4FF)
@@ -23,6 +23,8 @@ val DisplaySurfaceLight = Color(0xFFF3F5F6)
 val LightKeypadNormal = Color(0xFFE5EDFF)
 
 val LightKeypadAC = Color(0xFFE8DBFC)
+
+val LightCard = Color(0xFFFCFBFC)
 
 /* ---------- DARK THEME ---------- */
 val DarkBackground = Color(0xFF17181C)
@@ -43,3 +45,5 @@ val DarkTextQuaternary = Color(0xFF9BB8CD)
 val DarkKeypadNormal = Color(0xFF414659)
 
 val DarkKeypadAC = Color(0xFF5D3C57)
+
+val DarktCard = Color(0xFF32343A)
