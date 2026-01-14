@@ -82,9 +82,11 @@ dependencies {
     // Compiler (dùng KSP)
     ksp("androidx.room:room-compiler:$room_version")
 
-    //Navigation 3
-    implementation("androidx.navigation3:navigation3-runtime:1.1.0-alpha01")
-    implementation("androidx.navigation3:navigation3-ui:1.1.0-alpha01")
+    // CameraX core
+    implementation("androidx.camera:camera-core:1.3.2")
+    implementation("androidx.camera:camera-camera2:1.3.2")
+    implementation("androidx.camera:camera-lifecycle:1.3.2")
+    implementation("androidx.camera:camera-view:1.3.2")
 
 
 }

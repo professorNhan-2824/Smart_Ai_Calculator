@@ -29,6 +29,7 @@ private val LightColorScheme = lightColorScheme(
     errorContainer = LightKeypadAC,
 
     outlineVariant = LightCard,
+    inversePrimary = LightTextField
 )
 
 private val DarkColorScheme = darkColorScheme(
@@ -51,6 +52,7 @@ private val DarkColorScheme = darkColorScheme(
     errorContainer = DarkKeypadAC,
 
     outlineVariant = DarktCard,
+    inversePrimary = DarkTextField
     )
 
 

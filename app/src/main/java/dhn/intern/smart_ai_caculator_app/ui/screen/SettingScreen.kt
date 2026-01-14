@@ -69,7 +69,8 @@ fun SettingScreen(
     Scaffold(
         topBar = {NavBar(
             navController,
-            title = R.string.Setting_title
+            title = R.string.Setting_title,
+            contentColor = MaterialTheme.colorScheme.onBackground
         )},
 
     ) { innerPadding ->

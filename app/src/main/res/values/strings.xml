@@ -64,5 +64,17 @@
     <string name="history_bottom_copy_resulit">Copy result</string>
     <string name="history_bottom_delete">Delete</string>
 
+    <!-- AI Calculator-->
+    <string name="ai_calculator_title">AI Scan</string>
+    <string name="ai_calculator_scan">Scan</string>
+    <string name="ai_calculator_chat">Chat</string>
+    <string name="ai_calculator_input_placeholder">Ask me anything...</string>
+    <string name="ai_calculator_no_requesting">Requesting camera permission...</string>
+    <string name="ai_calculator_block_permission">Camera permission is required to show the preview. Grant it in settings if blocked.</string>
+    <string name="ai_calculator_open_setting">Open App Settings</string>
+    <string name="ai_calculator_text_field">Ask any thing to your ai assistant...</string>
+    <string name="ai_calculator_generating">Generating result...</string>
+
+
 
 </resources>

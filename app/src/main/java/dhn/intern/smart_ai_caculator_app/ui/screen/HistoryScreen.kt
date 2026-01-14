@@ -46,6 +46,7 @@ fun HistoryScreen(
             NavBar(
                 title = R.string.Basic_caculator_history,
                 navController = navController,
+                contentColor = MaterialTheme.colorScheme.onBackground
             )
         },
         modifier = Modifier

@@ -26,6 +26,8 @@ val LightKeypadAC = Color(0xFFE8DBFC)
 
 val LightCard = Color(0xFFFCFBFC)
 
+val LightTextField = Color(0xFFF1F5F9)
+
 /* ---------- DARK THEME ---------- */
 val DarkBackground = Color(0xFF17181C)
 
@@ -47,3 +49,5 @@ val DarkKeypadNormal = Color(0xFF414659)
 val DarkKeypadAC = Color(0xFF5D3C57)
 
 val DarktCard = Color(0xFF32343A)
+
+val DarkTextField = Color(0xFF30323E)
