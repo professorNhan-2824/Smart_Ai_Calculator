@@ -74,6 +74,10 @@
     <string name="ai_calculator_open_setting">Open App Settings</string>
     <string name="ai_calculator_text_field">Ask any thing to your ai assistant...</string>
     <string name="ai_calculator_generating">Generating result...</string>
+    <string name="ai_calculator_copy">Copy</string>
+    <string name="ai_calculator_rewrite">Rewrite</string>
+    <string name="ai_calculator_user">User</string>
+
 
 
 

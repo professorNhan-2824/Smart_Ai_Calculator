@@ -9,17 +9,13 @@ import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.systemBars
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
-import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import dhn.intern.smart_ai_caculator_app.R
 import dhn.intern.smart_ai_caculator_app.ui.components.NavBar_basic
@@ -29,6 +25,14 @@ fun AiChatScreen(
     navController: NavHostController,
     modifier: Modifier = Modifier,
 ) {
+    val listState = rememberLazyListState()
+
+//    LaunchedEffect(messages.size) {
+//        if (messages.isNotEmpty()) {
+//            listState.animateScrollToItem(messages.lastIndex)
+//        }
+//    }
+
     Scaffold(
         modifier = modifier,
         contentWindowInsets = WindowInsets.systemBars,
@@ -54,13 +58,28 @@ fun AiChatScreen(
         },
     ) { innerPadding ->
         LazyColumn(
+            state = listState,
             modifier = Modifier
                 .fillMaxSize()
                 .padding(innerPadding)
                 .background(MaterialTheme.colorScheme.primary),
             contentPadding = PaddingValues(bottom = 100.dp)
         ) {
-
+            item {
+                UserMessageBubble(
+                    message = "What is the result of 25 multiplied by 4?",
+                    image = null,
+                    time = "10:31 AM",
+                    modifier = Modifier.padding(16.dp)
+                )
+            }
+            item {
+                AiMessageBubble(
+                    message = "Hello! How can I assist you with your calculations today?",
+                    time = "10:30 AM",
+                    modifier = Modifier.padding(16.dp)
+                )
+            }
         }
     }
 }
