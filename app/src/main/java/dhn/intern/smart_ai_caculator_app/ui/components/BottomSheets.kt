@@ -35,6 +35,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.painterResource
@@ -44,6 +45,7 @@ import androidx.compose.ui.unit.dp
 import dhn.intern.smart_ai_caculator_app.R
 import dhn.intern.smart_ai_caculator_app.data.entity.CalculatorHistoryEntity
 import dhn.intern.smart_ai_caculator_app.data.menu_home.MenuData
+import dhn.intern.smart_ai_caculator_app.data.unit_calculator.UnitItemUI
 import dhn.intern.smart_ai_caculator_app.model.MenuUI
 import dhn.intern.smart_ai_caculator_app.ui.components.history.CaculatorHistory
 import dhn.intern.smart_ai_caculator_app.ui.screen.MenuItemRow
@@ -121,6 +123,113 @@ fun HalfScreenBottomSheet(
         }
     }
 }
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun UnitPickerBottomSheet(
+    title: Int,
+    units: List<UnitItemUI>,
+    selectedUnit: UnitItemUI?,
+    onSelect: (UnitItemUI) -> Unit,
+    onDismiss: () -> Unit
+) {
+    ModalBottomSheet(
+        onDismissRequest = onDismiss,
+        containerColor =  MaterialTheme.colorScheme.primary,
+        shape = RoundedCornerShape(topStart = 24.dp, topEnd = 24.dp)
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp)
+        ) {
+
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Text(
+                    text = stringResource(title),
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.Bold,
+                    color = MaterialTheme.colorScheme.onBackground,
+                    modifier = Modifier.weight(1f)
+                )
+                Icon(
+                    painter = painterResource(R.drawable.close),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(20.dp)
+                        .clickable { onDismiss() },
+                    tint = MaterialTheme.colorScheme.onBackground,
+                )
+            }
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            LazyColumn(
+                verticalArrangement = Arrangement.spacedBy(10.dp)
+            ) {
+                items(units) { unit ->
+                    UnitPickerItem(
+                        unit = unit,
+                        selected = unit == selectedUnit,
+                        onClick = {
+                            onSelect(unit)
+                            onDismiss()
+                        }
+                    )
+                }
+            }
+        }
+    }
+}
+@Composable
+fun UnitPickerItem(
+    unit: UnitItemUI,
+    selected: Boolean,
+    onClick: () -> Unit
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clip(RoundedCornerShape(12.dp))
+            .background(
+                if (selected)
+                    MaterialTheme.colorScheme.outline
+                else
+                    MaterialTheme.colorScheme.background.copy(1f)
+            )
+            .clickable { onClick() }
+            .padding(horizontal = 14.dp, vertical = 12.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Column(
+            modifier = Modifier.weight(1f)
+        ) {
+            Text(
+                text = unit.lable,
+                fontWeight = FontWeight.Bold,
+                color = if (selected) Color.White else MaterialTheme.colorScheme.onBackground
+            )
+            Text(
+                text = unit.des,
+                style = MaterialTheme.typography.bodySmall,
+                color = if (selected)
+                    Color.White.copy(alpha = 0.8f)
+                else
+                    MaterialTheme.colorScheme.onBackground.copy(0.6f)
+            )
+        }
+
+        Icon(
+            painter = painterResource(R.drawable.back),
+            contentDescription = null,
+            tint = if (selected) Color.White else MaterialTheme.colorScheme.onBackground.copy(0.4f)
+        )
+    }
+}
+
 @Composable
 fun BottomItemRow(
     item: MenuUI,

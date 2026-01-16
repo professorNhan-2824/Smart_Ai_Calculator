@@ -22,3 +22,19 @@ fun keyBackgroundColor(key: String): Color {
             MaterialTheme.colorScheme.surfaceVariant
     }
 }
+@Composable
+fun keyBackgroundColorUnit(keytype: KeyType): Color {
+    return when (keytype) {
+        KeyType.AC ->
+            MaterialTheme.colorScheme.errorContainer
+
+        KeyType.EQUAL ->
+            MaterialTheme.colorScheme.outline
+
+        KeyType.SCIENTIFIC ->
+            MaterialTheme.colorScheme.secondaryContainer
+
+        else ->
+            MaterialTheme.colorScheme.surfaceVariant
+    }
+}

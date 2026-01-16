@@ -19,6 +19,7 @@ import dhn.intern.smart_ai_caculator_app.ui.screen.HomeScreen
 import dhn.intern.smart_ai_caculator_app.ui.screen.LanguageScreen
 import dhn.intern.smart_ai_caculator_app.ui.screen.SettingScreen
 import dhn.intern.smart_ai_caculator_app.ui.screen.SplashScreen
+import dhn.intern.smart_ai_caculator_app.ui.screen.UnitCalculatorScreen
 import dhn.intern.smart_ai_caculator_app.ui.screen.ai_caculator_screen
 import dhn.intern.smart_ai_caculator_app.viewmodel.AppViewModel
 import kotlinx.coroutines.delay
@@ -85,6 +86,11 @@ fun AppNavHost(
             )
         }
 
+        composable(NavScreen.UnitCaculatorScreen.route){
+            UnitCalculatorScreen(
+                navController = navController
+            )
+        }
 
         composable(
             route = NavScreen.HistoryScreen.route,

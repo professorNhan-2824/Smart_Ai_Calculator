@@ -28,6 +28,11 @@ sealed class NavScreen {
         const val route = "ai_caculator"
     }
 
+    object UnitCaculatorScreen : NavScreen() {
+        const val route = "unit_converter"
+    }
+
+
     object HistoryScreen {
         const val route = "history_screen/{source}"
 

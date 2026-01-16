@@ -78,6 +78,17 @@
     <string name="ai_calculator_rewrite">Rewrite</string>
     <string name="ai_calculator_user">User</string>
 
+    <!-- Unit Calculator-->
+    <string name="unit_calculator_length">Length</string>
+    <string name="unit_calculator_mass">Mass</string>
+    <string name="unit_calculator_area">Area</string>
+    <string name="unit_calculator_volume">Volume</string>
+    <string name="unit_calculator_time">Time</string>
+    <string name="unit_calculator_data">Data</string>
+    <string name="unit_calculator_choose">Choose Unit</string>
+    <string name="unit_calculator_please_choose">Choose Unit Please</string>
+
+
 
 
 

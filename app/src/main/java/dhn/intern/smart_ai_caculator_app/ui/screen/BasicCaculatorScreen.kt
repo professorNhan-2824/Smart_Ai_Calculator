@@ -61,7 +61,6 @@ fun BasicCaculatorScreen(
     val result by calculatorViewModel.result.collectAsState()
 
     Scaffold(
-
         modifier = Modifier
             .fillMaxSize(),
     ) { innerPadding ->
