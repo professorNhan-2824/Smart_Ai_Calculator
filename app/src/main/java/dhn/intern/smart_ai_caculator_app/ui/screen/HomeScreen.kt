@@ -28,8 +28,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
-import dhn.intern.smart_ai_caculator_app.data.menu_home.MenuData
-import dhn.intern.smart_ai_caculator_app.model.MenuUI
+import dhn.intern.smart_ai_caculator_app.data.source.menu_home.MenuData
+import dhn.intern.smart_ai_caculator_app.data.model.MenuUI
 
 @Composable
 fun HomeScreen(

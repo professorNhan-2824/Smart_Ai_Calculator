@@ -36,11 +36,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import dhn.intern.smart_ai_caculator_app.R
-import dhn.intern.smart_ai_caculator_app.data.language.LanguageData
-import dhn.intern.smart_ai_caculator_app.model.LanguageUi
+import dhn.intern.smart_ai_caculator_app.data.preferences.language.LanguageData
+import dhn.intern.smart_ai_caculator_app.data.model.LanguageUi
 import dhn.intern.smart_ai_caculator_app.ui.components.LoadingScreen
-import dhn.intern.smart_ai_caculator_app.viewmodel.AppViewModel
-import dhn.intern.smart_ai_caculator_app.viewmodel.LanguageViewModel
+import dhn.intern.smart_ai_caculator_app.ui.viewmodel.AppViewModel
+import dhn.intern.smart_ai_caculator_app.ui.viewmodel.LanguageViewModel
 import org.koin.androidx.compose.koinViewModel
 
 @Composable

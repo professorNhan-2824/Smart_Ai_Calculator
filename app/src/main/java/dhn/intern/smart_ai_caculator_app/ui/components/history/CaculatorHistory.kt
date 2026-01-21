@@ -26,7 +26,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import dhn.intern.smart_ai_caculator_app.R
-import dhn.intern.smart_ai_caculator_app.data.entity.CalculatorHistoryEntity
+import dhn.intern.smart_ai_caculator_app.data.local.entity.CalculatorHistoryEntity
 
 @Composable
 fun CaculatorHistory(

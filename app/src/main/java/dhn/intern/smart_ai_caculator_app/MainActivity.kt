@@ -6,9 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.navigation.compose.rememberNavController
-import dhn.intern.smart_ai_caculator_app.ui.navigation.AppNavHost
-import dhn.intern.smart_ai_caculator_app.ui.theme.Smart_AI_Caculator_AppTheme
-import dhn.intern.smart_ai_caculator_app.viewmodel.ThemeViewModel
+import dhn.intern.smart_ai_caculator_app.navigation.AppNavHost
+import dhn.intern.smart_ai_caculator_app.activities.theme.Smart_AI_Caculator_AppTheme
+import dhn.intern.smart_ai_caculator_app.ui.viewmodel.ThemeViewModel
 import org.koin.androidx.compose.koinViewModel
 
 class MainActivity : AppCompatActivity() {

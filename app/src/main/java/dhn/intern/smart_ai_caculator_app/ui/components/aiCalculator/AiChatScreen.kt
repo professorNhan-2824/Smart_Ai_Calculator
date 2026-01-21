@@ -27,11 +27,6 @@ fun AiChatScreen(
 ) {
     val listState = rememberLazyListState()
 
-//    LaunchedEffect(messages.size) {
-//        if (messages.isNotEmpty()) {
-//            listState.animateScrollToItem(messages.lastIndex)
-//        }
-//    }
 
     Scaffold(
         modifier = modifier,

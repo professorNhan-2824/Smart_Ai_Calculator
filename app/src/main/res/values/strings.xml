@@ -88,6 +88,41 @@
     <string name="unit_calculator_choose">Choose Unit</string>
     <string name="unit_calculator_please_choose">Choose Unit Please</string>
 
+    <!--Currencies Converter-->
+    <string name="currencies_please_choose">Choose currency Please</string>
+    <string name="currencies_choose">Choose currency</string>
+    <string name="currencies_search">Search currency</string>
+
+    <!--Discount Calculator-->
+    <string name="discount_calculator_split">Split With</string>
+    <string name="discount_calculator_results">Results</string>
+    <string name="discount_calculator_amount_saved">Amount Saved</string>
+    <string name="discount_calculator_tax">Tax</string>
+    <string name="discount_calculator_final_prices">Final Prices</string>
+
+    <!--BMI Calculator-->
+    <string name="bmi_weight">Weight (kg)</string>
+    <string name="bmi_height">Height (ft-in)</string>
+    <string name="bmi_age">Age</string>
+    <string name="bmi_gender">Gender</string>
+    <string name="bmi_male">Male</string>
+    <string name="bmi_female">Female</string>
+    <string name="bmi_calculate">Calculate</string>
+    <string name="bmi_calculator_your_bmi">Your BMI is...</string>
+    <string name="bmi_calculator_16">Very severely underweight</string>
+    <string name="bmi_calculator_16_9">Severely underweight</string>
+    <string name="bmi_calculator_18">Underweight</string>
+    <string name="bmi_calculator_20">Normal</string>
+    <string name="bmi_calculator_28">Overweight</string>
+    <string name="bmi_calculator_obese_i">Obese Class I</string>
+    <string name="bmi_calculator_obese_ii">Obese Class II</string>
+    <string name="bmi_calculator_obese_iii">Obese Class III</string>
+
+
+
+
+
+
 
 
 

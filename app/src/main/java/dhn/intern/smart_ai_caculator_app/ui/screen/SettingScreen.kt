@@ -36,13 +36,13 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import dhn.intern.smart_ai_caculator_app.R
-import dhn.intern.smart_ai_caculator_app.model.ChildMenuSettingUI
-import dhn.intern.smart_ai_caculator_app.data.menu_setting.SettingMenuData
-import dhn.intern.smart_ai_caculator_app.model.SettingMenuUI
+import dhn.intern.smart_ai_caculator_app.data.model.ChildMenuSettingUI
+import dhn.intern.smart_ai_caculator_app.data.source.menu_setting.SettingMenuData
+import dhn.intern.smart_ai_caculator_app.data.model.SettingMenuUI
 import dhn.intern.smart_ai_caculator_app.ui.components.NavBar
 import dhn.intern.smart_ai_caculator_app.ui.components.ThemeSwitchItem
-import dhn.intern.smart_ai_caculator_app.viewmodel.LanguageViewModel
-import dhn.intern.smart_ai_caculator_app.viewmodel.ThemeViewModel
+import dhn.intern.smart_ai_caculator_app.ui.viewmodel.LanguageViewModel
+import dhn.intern.smart_ai_caculator_app.ui.viewmodel.ThemeViewModel
 import org.koin.androidx.compose.koinViewModel
 
 

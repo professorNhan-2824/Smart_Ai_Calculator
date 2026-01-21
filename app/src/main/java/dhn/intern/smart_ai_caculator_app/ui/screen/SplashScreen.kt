@@ -22,7 +22,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import dhn.intern.smart_ai_caculator_app.R
-import dhn.intern.smart_ai_caculator_app.viewmodel.AppViewModel
+import dhn.intern.smart_ai_caculator_app.ui.viewmodel.AppViewModel
 import org.koin.androidx.compose.koinViewModel
 
 @Composable

@@ -24,9 +24,9 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import dhn.intern.smart_ai_caculator_app.data.unit_calculator.UnitData
-import dhn.intern.smart_ai_caculator_app.data.unit_calculator.UnitUi
-import dhn.intern.smart_ai_caculator_app.data.unit_calculator.toCategory
+import dhn.intern.smart_ai_caculator_app.data.source.unit_calculator.UnitData
+import dhn.intern.smart_ai_caculator_app.data.source.unit_calculator.UnitUi
+import dhn.intern.smart_ai_caculator_app.data.source.unit_calculator.toCategory
 import dhn.intern.smart_ai_caculator_app.enum.UnitCategory
 
 @Composable

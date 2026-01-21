@@ -3,14 +3,12 @@ package dhn.intern.smart_ai_caculator_app.ui.components.keypad
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import dhn.intern.smart_ai_caculator_app.data.keypad.key_values
+import dhn.intern.smart_ai_caculator_app.data.source.keypad.key_values
 
 @Composable
 fun ScientificKeypad(

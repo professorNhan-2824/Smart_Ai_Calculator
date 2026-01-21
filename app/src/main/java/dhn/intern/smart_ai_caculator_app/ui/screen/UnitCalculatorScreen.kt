@@ -21,10 +21,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import dhn.intern.smart_ai_caculator_app.R
-import dhn.intern.smart_ai_caculator_app.data.unit_calculator.UnitData
-import dhn.intern.smart_ai_caculator_app.data.unit_calculator.UnitItemUI
-import dhn.intern.smart_ai_caculator_app.data.unit_calculator.UnitUi
-import dhn.intern.smart_ai_caculator_app.data.unit_calculator.unitsByCategory
+import dhn.intern.smart_ai_caculator_app.data.source.unit_calculator.UnitData
+import dhn.intern.smart_ai_caculator_app.data.source.unit_calculator.UnitItemUI
+import dhn.intern.smart_ai_caculator_app.data.source.unit_calculator.unitsByCategory
 import dhn.intern.smart_ai_caculator_app.enum.ActiveField
 import dhn.intern.smart_ai_caculator_app.enum.UnitCategory
 import dhn.intern.smart_ai_caculator_app.ui.components.NavBar
@@ -142,6 +141,9 @@ fun UnitCalculatorScreen(
                                 activeField = when (activeField) {
                                     ActiveField.FROM -> ActiveField.TO
                                     ActiveField.TO -> ActiveField.FROM
+                                    else -> {
+                                        ActiveField.FROM
+                                    }
                                 }
                             }
 
@@ -152,6 +154,10 @@ fun UnitCalculatorScreen(
 
                                     ActiveField.TO ->
                                         toValue = handleInput(toValue, key)
+
+                                    else -> {
+                                        fromValue = handleInput(fromValue, key)
+                                    }
                                 }
                             }
                         }

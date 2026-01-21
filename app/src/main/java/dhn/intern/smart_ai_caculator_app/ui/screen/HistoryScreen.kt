@@ -21,13 +21,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import dhn.intern.smart_ai_caculator_app.R
-import dhn.intern.smart_ai_caculator_app.data.entity.CalculatorHistoryEntity
+import dhn.intern.smart_ai_caculator_app.data.local.entity.CalculatorHistoryEntity
 import dhn.intern.smart_ai_caculator_app.enum.HistorySource
 import dhn.intern.smart_ai_caculator_app.ui.components.HalfScreenBottomSheet
 import dhn.intern.smart_ai_caculator_app.ui.components.NavBar
 import dhn.intern.smart_ai_caculator_app.ui.components.history.CaculatorHistory
 import dhn.intern.smart_ai_caculator_app.ui.components.history.CardItemsChatbox
-import dhn.intern.smart_ai_caculator_app.viewmodel.CalculatorViewModel
+import dhn.intern.smart_ai_caculator_app.ui.viewmodel.CalculatorViewModel
 import org.koin.compose.koinInject
 
 @Composable
